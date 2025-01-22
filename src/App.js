@@ -11,7 +11,7 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
